@@ -6,3 +6,6 @@ To avoid falling into Tutorial Hell, focus on understanding the logic behind the
 "The best way to learn is to teach." – Frank Oppenheimer
 ![Frank_Oppenheimer](https://net.kidzsearch.com/wp-content/uploads/2023/08/dr-j-robert-oppenheimer--900x515.jpg)
 Image: https://net.kidzsearch.com
+
+[![Gizli Buton](https://img.shields.io/badge/-00000000?style=flat)](https://link.com)
+
