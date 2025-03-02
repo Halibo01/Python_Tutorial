@@ -1,5 +1,7 @@
 # Random Kütüphanesi
 # 'random' kütüphanesini içe aktarırız. Bu kütüphane rastgele sayılar üretmek için kullanılır.
+# C++ örneği:
+# #include <random>  // random sayı üretimi için
 import random
 
 # 'random.randint(a, b)' fonksiyonu, a ile b arasındaki (a ve b dahil) rastgele bir tamsayı döndürür.
