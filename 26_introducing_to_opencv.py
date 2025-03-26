@@ -62,7 +62,7 @@ matris[4, 4] = 0                                                     # matris de
 """
 matris = np.uint8(matris)                                               # unsigned integer 8 değerine dönüştürme işlemi. Resimler standart olarak 0 ile 255 arasına yani 8 bitlik görüntülerdir.
                                                                         # matrisin veri tipi bu kod ile belirlenir
-matris = cv2.resize(matris, (600, 600), interpolation=cv2.INTER_NEAREST)# Kübik olarak yeniden boyutlandırma
+matris = cv2.resize(matris, (600, 600), interpolation=cv2.INTER_NEAREST)# Kübik olarak yeniden boyutlandırma. NOT: Yeniden boyutlandırma olmadan 5x5 pixellik bir görüntüyü görmek imkansız olur
 cv2.imshow("Benim matrisim :)", matris)                                 # Ekrana gösterme
 cv2.waitKey(0)
 """
