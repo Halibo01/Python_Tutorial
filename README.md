@@ -1,7 +1,18 @@
 # This repo is for new python programmers
 
+### How to start?
+You start working with only using:
+```
+python 0_setup.py
+```
+This code will do all job for installing packages about those tutorials.
+
+---
+### Which Versions Are Available For That Tutorial?
 Tested on:
 ![Version](https://img.shields.io/pypi/pyversions/torch?logo=python)
+
+---
 
 This repository is a resource for those who want to learn Python. However, instead of just copying and running these codes, try modifying them to enhance your learning. Real learning begins when you start creating your own projects. 
 
