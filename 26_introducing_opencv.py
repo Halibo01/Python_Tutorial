@@ -52,21 +52,19 @@ matris = [
 matris = np.array(matris)                                            # Listeyi matrise dönüştürme işlemi
 print(matris[4, 0])                                                  # matrisin 4. satır 0. sütundaki değerini alma işlemi
 matris[4, 4] = 0                                                     # matris değerlerinde değişiklik yapabilirsiniz
-"""
+
 
 
 
 
 
 # Oluşturduğunuz matrisi aşağıdaki koddan görüntüleyebilirsiniz:
-"""
 matris = np.uint8(matris)                                               # unsigned integer 8 değerine dönüştürme işlemi. Resimler standart olarak 0 ile 255 arasına yani 8 bitlik görüntülerdir.
                                                                         # matrisin veri tipi bu kod ile belirlenir
 matris = cv2.resize(matris, (600, 600), interpolation=cv2.INTER_NEAREST)# Kübik olarak yeniden boyutlandırma. NOT: Yeniden boyutlandırma olmadan 5x5 pixellik bir görüntüyü görmek imkansız olur
 cv2.imshow("Benim matrisim :)", matris)                                 # Ekrana gösterme
 cv2.waitKey(0)
 """
-
 
 
 
@@ -79,12 +77,12 @@ image = cv2.imread(r"26_introducing_to_opencv/Lena.png") # Eğer dosya yolu bulu
 
 
 # 2. Görüntüyü ekrana gösterelim.
-
+"""
 cv2.imshow('Original Image', image)     # cv2.imshow(str, matrix) değeri almaktadır. String değeri yalnızca pencerenin yazısını belli eder ondan dolayı önemli değildir
 cv2.waitKey(0)                          # cv2.waitKey(0) Koymamızın nedeni görselin süresiz bir şekilde göstermek istememizdir. 0 değerine herhangi başka bir sayı yazılabilir
                                         # cv2.waitKey fonksiyonundaki sayı değeri görselin milisaniye bakımından ne kadar kalacağını belirler. Eğer değer 5000 olursa görsel 5 saniye
                                         # boyunca ekranda kalır
-
+"""
 
 # 3. Görüntüde matrix işlemleri
 # Görseldeki tek bir matrixi görüntüleyelim:
@@ -122,7 +120,7 @@ print(image.shape)
 """
 
 # 4. Görüntüyü gri tonlamaya çevirelim.
-"""
+
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) # cv2.COLOR_BGR2GRAY yerine farklı değerler kullanabilirsiniz. Bunların hepsini inceleyebilirsiniz.
 cv2.imshow("image", gray_image)
 cv2.waitKey(0)
@@ -133,7 +131,7 @@ print(gray_image[250, 250])
 # Çıktı: 186
 # Görüntü belirli hesaplamalarla gri tonlamaya yani yalnızca tek bir renk kanalına dönüştüğü için 3 adet renk değeri yerine 1 adet renk değeri görünür
 
-"""
+
 
 
 

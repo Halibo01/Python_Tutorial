@@ -1,6 +1,6 @@
 import os
 import subprocess
-
+# Gerekli kütüphanelerin yüklemelerini yapmak için bu python programını çalıştırınız
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
 for folder in os.listdir(base_dir):
