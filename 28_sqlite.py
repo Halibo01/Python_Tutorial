@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS ogrenciler (
     ad TEXT NOT NULL,                       -- Öğrencinin adı (boş bırakılamaz)
     soyad TEXT,                             -- Öğrencinin soyadı
     yas INTEGER                             -- Öğrencinin yaşı
-)
+)sq
 """)
 
 # --------------------------------------
@@ -38,18 +38,20 @@ CREATE TABLE IF NOT EXISTS ogrenciler (
 # --------------------------------------
 
 # Örnek öğrenci verilerini tabloya ekleyelim
+"""
 cursor.execute("INSERT INTO ogrenciler (ad, soyad, yas) VALUES (?, ?, ?)", ("Ali", "Yılmaz", 20))
 cursor.execute("INSERT INTO ogrenciler (ad, soyad, yas) VALUES (?, ?, ?)", ("Zeynep", "Demir", 21))
 cursor.execute("INSERT INTO ogrenciler (ad, soyad, yas) VALUES (?, ?, ?)", ("Mehmet", "Kara", 22))
 
 # Değişiklikleri veritabanına kaydetmeyi unutma
 conn.commit()
-
+"""
 # --------------------------------------
 # 4. Veri Listeleme (SELECT)
 # --------------------------------------
 
 # Tüm öğrencileri çekelim
+"""
 cursor.execute("SELECT * FROM ogrenciler")
 ogrenciler = cursor.fetchall()  # fetchall() tüm sonuçları liste olarak getirir
 
@@ -57,17 +59,20 @@ ogrenciler = cursor.fetchall()  # fetchall() tüm sonuçları liste olarak getir
 print("=== Tüm Öğrenciler ===")
 for ogrenci in ogrenciler:
     print(ogrenci)
+"""
 
 # --------------------------------------
 # 5. Filtreli Sorgulama
 # --------------------------------------
 
 # Yaşı 21 ve üstü olan öğrencileri çekelim
+"""
 cursor.execute("SELECT ad, soyad FROM ogrenciler WHERE yas >= ?", (21,))
 sonuclar = cursor.fetchall()
 print("\n21 yaş ve üzeri öğrenciler:")
 for s in sonuclar:
     print(s)
+"""
 
 # --------------------------------------
 # 6. Veri Güncelleme (UPDATE)
